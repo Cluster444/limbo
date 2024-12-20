@@ -38,6 +38,8 @@ use crate::{function::JsonFunc, json::get_json};
 use crate::{Connection, Result, TransactionState};
 use crate::{Rows, DATABASE_VERSION};
 
+use limbo_macros::opcodes;
+
 use datetime::{exec_date, exec_time, exec_unixepoch};
 
 use rand::distributions::{Distribution, Uniform};
@@ -74,6 +76,7 @@ impl Display for Func {
     }
 }
 
+#[opcodes]
 #[derive(Debug)]
 pub enum Insn {
     // Initialize the program state and jump to the given PC.

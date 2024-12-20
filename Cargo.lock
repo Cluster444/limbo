@@ -1138,6 +1138,7 @@ dependencies = [
  "jsonb",
  "julian_day_converter",
  "libc",
+ "limbo_macros",
  "log",
  "mimalloc",
  "mockall",
@@ -1156,6 +1157,15 @@ dependencies = [
  "sqlite3-parser",
  "tempfile",
  "thiserror 1.0.69",
+]
+
+[[package]]
+name = "limbo_macros"
+version = "0.0.10"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.90",
 ]
 
 [[package]]

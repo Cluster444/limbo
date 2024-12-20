@@ -10,6 +10,7 @@ members = [
     "core",
     "simulator",
     "test",
+    "macros",
 ]
 exclude = ["perf/latency/limbo"]
 
